@@ -1,6 +1,7 @@
 brew "stow"
 brew "git"
 brew "zsh"
+brew "mise"
 cask "bruno"
 cask "docker"
 cask "goland"
