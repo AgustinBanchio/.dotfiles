@@ -83,14 +83,6 @@ fi
 # -----------------------------------------------------------------------------
 # Install mise (development tool version manager)
 # -----------------------------------------------------------------------------
-if ! command -v mise >/dev/null 2>&1; then
-  echo "Installing mise version manager..."
-  curl -sSL https://mise.run | sh
-
-  # Add mise to current shell session
-  export PATH="$HOME/.local/bin:$PATH"
-fi
-
 # Install tools defined in .mise.toml
 if command -v mise >/dev/null 2>&1; then
   echo "Installing development tools with mise..."
